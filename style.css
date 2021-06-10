@@ -7,14 +7,11 @@
 
 body {
   background: hsl(233, 47%, 7%);
-  flex-direction: column;
-  display: flex;
 }
 
 #wrapper {
   background: hsl(233, 47%, 7%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: aliceblue;
@@ -23,18 +20,24 @@ body {
 }
 
 #container {
-  height: fit-content;
-  width: fit-content;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   background: hsl(244, 38%, 16%);
   border-radius: 10px 10px 10px 10px;
+  width:fit;
 }
 
 .content {
   margin: 2.5em 2.5em 2.5em 2.5em;
-  display: inline;
   border-radius: 10px 10px 10px 10px;
+  flex-basis: auto;
+  width: 50%;
 }
 
 .content h1 {
@@ -79,24 +82,37 @@ body {
 
 #image-container {
   background: url("./images/image-header-desktop.jpg");
-  display: inline-block;
   background-size: cover;
-  width: 100%;
   border-radius: 0px 10px 10px 0px;
+  width:50%;
 }
 
-#image-container::before {
+#image-container::after {
   content: "";
   background: blueviolet;
   opacity: 1;
   position: absolute;
-  top: 0;
-  left: 0;
-}
 
-#image-container img {
 }
 
 .attribution {
-  flex-basis: 0;
+  position: absolute;
+  bottom: 20px;
+  left: auto;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 930px) {
+  #wrapper {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
 }
