@@ -16,21 +16,16 @@ body {
   justify-content: center;
   color: aliceblue;
   padding: 10%;
-  height: 100vh;
 }
 
 #container {
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  position: relative;
   background: hsl(244, 38%, 16%);
   border-radius: 10px 10px 10px 10px;
-  width:fit;
+  max-width:100%;
+  height: 100%;
+
 }
 
 .content {
@@ -38,6 +33,7 @@ body {
   border-radius: 10px 10px 10px 10px;
   flex-basis: auto;
   width: 50%;
+  height: auto;
 }
 
 .content h1 {
@@ -85,15 +81,18 @@ body {
   background-size: cover;
   border-radius: 0px 10px 10px 0px;
   width:50%;
+  height: auto;
 }
 
-#image-container::after {
-  content: "";
-  background: blueviolet;
-  opacity: 1;
-  position: absolute;
-
+#image-container .layer {
+  background-color: rgba(138, 43, 226, 0.45);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 
 .attribution {
   position: absolute;
@@ -111,8 +110,28 @@ body {
 @media (max-width: 930px) {
   #wrapper {
     padding: 1.5em;
+    flex-direction: row;
   }
 }
 
 @media (max-width: 600px) {
+  #container {
+    flex-direction: column;
 }
+#image-container {
+  background: url("./images/image-header-desktop.jpg");
+  background-size: cover;
+  border-radius: 0px 10px 10px 0px;
+  width:auto;
+  height: 50%;
+}
+
+.content {
+  margin: 2.5em 2.5em 2.5em 2.5em;
+  border-radius: 10px 10px 10px 10px;
+  width: auto;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+} 
