@@ -7,32 +7,38 @@
 
 body {
   background: hsl(233, 47%, 7%);
+  height: 100%;
 }
 
 #wrapper {
   background: hsl(233, 47%, 7%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: aliceblue;
   padding: 10%;
+  min-height: 100vh;
 }
 
 #container {
   display: flex;
-  position: relative;
+  flex-direction: row;
   background: hsl(244, 38%, 16%);
   border-radius: 10px 10px 10px 10px;
-  max-width:100%;
-  height: 100%;
+  min-height: 100%;
+}
 
+#container > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .content {
   margin: 2.5em 2.5em 2.5em 2.5em;
   border-radius: 10px 10px 10px 10px;
-  flex-basis: auto;
-  width: 50%;
   height: auto;
 }
 
@@ -48,13 +54,22 @@ body {
 }
 .content p {
   margin-bottom: 50px;
-  font-size: 15px;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
 }
-#statistics {
+
+.statistics {
+  list-style-type: none;
+}
+
+.statistics > li {
+  display: flex;
+  flex-direction: column;
+}
+.statistics {
   margin-bottom: 1.5em;
   line-height: 1.5em;
   display: flex;
@@ -63,7 +78,7 @@ body {
   align-items: center;
 }
 
-#statistics h3 {
+.statistics .stats {
   font-family: "Inter";
   letter-spacing: 2px;
 }
@@ -72,7 +87,7 @@ body {
   font-family: "Spectral", sans-serif;
   text-transform: uppercase;
   color: hsla(0, 0%, 100%, 0.6);
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -80,58 +95,62 @@ body {
   background: url("./images/image-header-desktop.jpg");
   background-size: cover;
   border-radius: 0px 10px 10px 0px;
-  width:50%;
-  height: auto;
 }
 
 #image-container .layer {
-  background-color: rgba(138, 43, 226, 0.45);
+  background-color: rgba(138, 43, 226, 0.35);
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 0px 10px 10px 00px;
 }
 
-
 .attribution {
-  position: absolute;
-  bottom: 20px;
-  left: auto;
-  font-size: 15px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
 }
 
 .attribution a {
   text-decoration: none;
   font-weight: 700;
+  color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 930px) {
   #wrapper {
     padding: 1.5em;
-    flex-direction: row;
   }
 }
 
 @media (max-width: 600px) {
   #container {
     flex-direction: column;
-}
-#image-container {
-  background: url("./images/image-header-desktop.jpg");
-  background-size: cover;
-  border-radius: 0px 10px 10px 0px;
-  width:auto;
-  height: 50%;
-}
+    min-height: 100%;
+  }
 
-.content {
-  margin: 2.5em 2.5em 2.5em 2.5em;
-  border-radius: 10px 10px 10px 10px;
-  width: auto;
-  justify-content: center;
-  align-self: flex-end;
-}
+  #image-container{
+    flex:1;
+  }
 
-} 
+  .content{
+    flex:1;
+    text-align:center;
+  }
+
+  .statistics {
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+
+  .statistics li:nth-child(2){
+    margin: 20px;
+  }
+}
