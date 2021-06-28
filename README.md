@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -40,8 +40,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Stats preview card component](https://www.frontendmentor.io/solutions/stats-preview-card-component-LNQPquaIg)
+- Live Site URL: [Stats preview card component live](https://mer7in.github.io/stats-preview-card-component/)
 
 ## My process
 
@@ -50,7 +50,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 <!-- - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
@@ -62,20 +61,16 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-
-
 ### Continued development
 
-* Flexbox is a powerfull tool for building awesome design i consider going deeper on learning on building awesome things with it
+- Flexbox is a powerfull tool for building awesome design i consider going deeper on learning on building awesome things with it
 
-* i've never eard of 
-
+- i've never eard of mix-blend-mode and picture tag until now, i didn't really used them in this challenge but i'll make some research so i can use them maybe next time.
 
 ### Useful resources
 
 - [Boxes That Fill Height (Or More) (and Don’t Squish)](https://css-tricks.com/boxes-fill-height-dont-squish/) - This helped me understand how to make the flex child fit perfectly in the flex container.
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is an amazing article which helped me finally Flexbox. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
