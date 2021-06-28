@@ -18,7 +18,6 @@ body {
   justify-content: center;
   color: aliceblue;
   padding: 10%;
-  min-height: 100vh;
 }
 
 #container {
@@ -26,11 +25,10 @@ body {
   flex-direction: row-reverse;
   background: hsl(244, 38%, 16%);
   border-radius: 10px 10px 10px 10px;
-  min-height: 100%;
 }
 
 #container > div {
-  flex: 1;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,7 +149,23 @@ body {
 
 @media (max-width: 930px) {
   #wrapper {
-    padding: 3.5em;
+    padding: 1em;
+  }
+
+  .content {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .statistics > li {
+    padding: 5px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  #container {
+    width: 80%;
   }
 }
 
@@ -179,6 +193,7 @@ body {
   .content {
     flex: 1;
     text-align: center;
+    padding-top: 1.2rem;
   }
 
   .statistics {
