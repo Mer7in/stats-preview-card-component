@@ -174,10 +174,14 @@ body {
 @media (max-width: 600px) {
   #container {
     flex-direction: column;
-    min-height: 100%;
     width: 100%;
   }
 
+  #wrapper{
+    height: auto;
+  }
+
+  
   #image-container {
     visibility: hidden;
     display: none;
