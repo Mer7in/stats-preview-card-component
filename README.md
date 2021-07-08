@@ -2,7 +2,7 @@
 
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-https://github.com/Mer7in/stats-preview-card-component/blob/main/images/image-header-desktop.jpg
+![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Table of contents
 
